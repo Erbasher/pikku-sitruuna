@@ -33,6 +33,7 @@
     <header>
 
         <img src="images/logo.png">
+        <h1>Pikku Sitruuna</h1>
 
     </header>
 
@@ -50,21 +51,56 @@
 
     <main>
 
-        <h1>Blog</h1>
+        <h1>Login</h1>
+
+        <form>
+
+            <div>
+                <label for="user_first_name">Etunimi</label><br>
+                <input type="text" id="user_first_name" name="user_first_name" required minlength="3">
+            </div>
+
+            <div>
+                <label for="user_last_name">Sukunimi</label><br>
+                <input type="text" id="user_last_name" name="user_last_name" required minlength="3">
+            </div>
+
+            <div>
+                <label for="user_email">Sähköposti</label><br>
+                <input type="email" id="user_email" name="user_email" required>
+            </div>
+
+            <div>
+                <label for="user_password">Salasana</label><br>
+                <input type="password" id="user_password" name="user_password" required>
+            </div>
+
+            <div>
+                <label for="user_confirm_password">Vahvista salasana</label><br>
+                <input type="password" id="user_confirm_password" name="user_confirm_password" required minlength="8">
+            </div>
+
+            <div>
+                <br>
+                <button type="submit">Kirjaudu</button><br>
+
+            </div>
+
+        </form>
 
         <article>
 
-            <h2>20% off this weekend!</h2>
+            <h2>20% alennus tulevana viikonloppuna!</h2>
 
-            <p>Come down to Little Lemon and your meal will be 20% off!</p>
+            <p>Syö Pikku Sitruunassa 20% alehintaan!</p>
 
         </article>
 
         <article>
 
-            <h2>Our new Menu</h2>
+            <h2>Uusi ruokalistamme</h2>
 
-            <p>We've updated our menu with new dinners.</p>
+            <p>Olemme päivittäneet ruokalistamme.</p>
 
         </article>
     </main>
@@ -74,6 +110,12 @@
         <p>Copyright E. Hernberg</p>
 
     </footer>
+
+    <style>
+        input:focus:invalid {
+            border: 2px solid red;
+        }
+    </style>
 
 </body>
 
