@@ -1,2 +1,3 @@
 # pikku-sitruuna
-Pikku-Sitruuna ravintola
+Piikku-Sitruuna ravintola.
+Index sivu lisätty.
