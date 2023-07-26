@@ -52,30 +52,26 @@
     <main> 
 
         <h1>Varaa pöytä</h1>
-        
-        <form methor="POST">
 
-            <fieldset id="size">
-                <label>
-                    <input type="radio" value="2" name="size"> 2:n hengen pöytä 
-                </label>
-                <label>
-                    <input type="radio" value="4" name="size" checked> 4:n hengen pöytä
-                </label>
-                <label>
-                    <input type="radio" value="6" name="size"> 6:n hengen pöytä
-                </label>
-            </fieldset>
+        <form method="POST">
 
-            <fieldset id="location">
-                <label>
-                    <input type="radio" value="sisätiloissa" name="location" checked> Pöytä ravintolan sisätiloissa
-                </label>
-                <label>
-                    <input type="radio" value="ulkotiloissa" name="location"> Pöytä ravintolan terassilla
-                </label>
-            </fieldset>
+            <div>
+                <label for="booking_date">Pöytävarauksen päivämäärä</label>
+                    <input type="date" id="booking_date" name="booking_date">
+            </div>
 
+            <div>
+                <input type="range" id="booking_people" name="booking_people" min="1" max="10" value="4">
+
+            </div>
+
+            <div>
+
+            </div>
+
+            <div>
+
+            </div>
             <button type="submit">Varaa pöytä</button>
 
         </form>
