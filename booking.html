@@ -61,11 +61,18 @@
             </div>
 
             <div>
-                <input type="range" id="booking_people" name="booking_people" min="1" max="10" value="4">
-
+                <label for="booking_people">Ruokailijoiden määrä</label>
+                    <input type="range" id="booking_people" name="booking_people" min="1" max="10" value="4" oninput="this.nextElementSibling.value = this.value">
+                <output>4</output>
             </div>
 
             <div>
+                <label>Sijainti</label>
+                    <input id="booking_location" name="booking_location" list="locations">
+                    <datalist id="locations">
+                        <option>Helsinki</option>
+                        <option>Tampere</option>
+                    </datalist>
 
             </div>
 
