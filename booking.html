@@ -24,7 +24,7 @@
     <meta name="googlebot" content="notranslate">
     <meta name="copyright" content="Copyright 2023">
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="..css/style.css">
 
 </head>
 
@@ -60,14 +60,18 @@
                     <input type="date" id="booking_date" name="booking_date">
             </div>
 
+            <br>
+
             <div>
                 <label for="booking_people">Ruokailijoiden määrä</label>
                     <input type="range" id="booking_people" name="booking_people" min="1" max="10" value="4" oninput="this.nextElementSibling.value = this.value">
                 <output>4</output>
             </div>
 
+            <br>
+
             <div>
-                <label>Sijainti</label>
+                <label for="booking_location">Sijainti</label>
                     <input id="booking_location" name="booking_location" list="locations">
                     <datalist id="locations">
                         <option>Helsinki</option>
@@ -75,6 +79,8 @@
                     </datalist>
 
             </div>
+
+            <br>
 
             <div>
 
