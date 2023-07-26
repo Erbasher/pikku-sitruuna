@@ -55,11 +55,15 @@
         <form methor="POST">
 
             <fieldset id="size">
+                <input type="radio" value="2" name="size"> 2:n hengen pöytä
+                <input type="radio" value="4" name="size" checked> 4:n hengen pöytä
+                <input type="radio" value="6" name="size"> 6:n hengen pöytä
 
             </fieldset>
 
             <fieldset id="location">
-
+                <input type="radio" value="sisätiloissa" name="location" checked> Pöytä ravintolan sisätiloissa
+                <input type="radio" value="ulkotiloissa" name="location"> Pöytä ravintolan terassilla
             </fieldset>
 
             <button type="submit">Varaa pöytä</button>
