@@ -10,8 +10,8 @@
     <meta property="og:title" content="Ruokalista">
     <meta property="og:type" content="website">
     <meta property="og:image" content="images/logo.png">
-    <meta property="og:url" content="https://pikku-sitruuna">
-    <meta property="og:description" content="Pikku-Sitruuna on pieni perheravintola välimerellisillä annoksilla.">
+    <meta property="og:url" content="https://littlelemon">
+    <meta property="og:description" content="Little lemon is a Mediterranean restaurant with inspiring Menu">
     <meta property="og:locale" content="fi_FI">
     <meta property="og:site_name" content="Pikku Pikku-Sitruuna">
     
@@ -19,12 +19,12 @@
     <title>Little Lemon</title>
 
     <meta name="author" content="Erno Hernberg">
-    <meta name="Description" content="Ernon harjoittelu-sivu">
+    <meta name="Description" content="Table booking form">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="notranslate">
     <meta name="copyright" content="Copyright 2023">
 
-    <link rel="stylesheet" href="..css/style.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -33,7 +33,7 @@
     <header>
 
         <img src="images/logo.png">
-        <h1>Pikku Sitruuna</h1>
+        <h1>Little Lemon Restaurant</h1>
 
     </header>
 
@@ -51,19 +51,19 @@
 
     <main> 
 
-        <h1>Varaa pöytä</h1>
+        <h2>Book a Table</h2>
 
         <form method="POST">
 
             <div>
-                <label for="booking_date">Pöytävarauksen päivämäärä</label>
+                <label for="booking_date">Choose the Date</label>
                     <input type="date" id="booking_date" name="booking_date">
             </div>
 
             <br>
 
             <div>
-                <label for="booking_people">Ruokailijoiden määrä</label>
+                <label for="booking_people">Number of People</label>
                     <input type="range" id="booking_people" name="booking_people" min="1" max="10" value="4" oninput="this.nextElementSibling.value = this.value">
                 <output>4</output>
             </div>
@@ -71,10 +71,11 @@
             <br>
 
             <div>
-                <label for="booking_location">Sijainti</label>
+                <label for="booking_location">Location</label>
                     <input id="booking_location" name="booking_location" list="locations">
                     <datalist id="locations">
                         <option>Helsinki</option>
+                        <option>Turku</option>
                         <option>Tampere</option>
                     </datalist>
 
@@ -83,9 +84,18 @@
             <br>
 
             <div>
-
+                <label>
+                    <input type="checkbox" id="agree" name="agree" required>
+                    I agree to the cancellation policy
+                </label>
+                  
             </div>
-            <button type="submit">Varaa pöytä</button>
+
+            <br>
+
+            <button type="submit">Confirm Booking</button>
+
+
 
         </form>
 
